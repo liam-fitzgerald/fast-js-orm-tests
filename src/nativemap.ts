@@ -3,11 +3,11 @@ import bigInt, { BigInteger } from 'big-integer';
 
 function sortBigInt(a: BigInteger, b: BigInteger) {
   if (a.lt(b)) {
-    return -1;
+    return 1;
   } else if (a.eq(b)) {
     return 0;
   } else {
-    return 1;
+    return -1;
   }
 }
 

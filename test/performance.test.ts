@@ -61,6 +61,17 @@ const testMapImplementation = (
           });
         });
 
+        if(name === 'small') {
+          it('should peek largest', () => {
+            const [key] = map.peekLargest()!;
+            expect(key.toJSNumber()).toEqual(9);
+          });
+          it('should peek smallest', () => {
+            const [key] = map.peekSmallest()!;
+            expect(key.toJSNumber()).toEqual(0);
+          });
+        }
+
         timeIt(ref, 'should have key', () => {
           const doesHave = map.has(sampleKey);
           expect(doesHave).toBeTruthy();
