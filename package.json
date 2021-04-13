@@ -1,0 +1,61 @@
+{
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "size": "size-limit",
+    "analyze": "size-limit --why"
+  },
+  "peerDependencies": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "name": "orm-tests",
+  "author": "Liam Fitzgerald",
+  "module": "dist/orm-tests.esm.js",
+  "size-limit": [
+    {
+      "path": "dist/orm-tests.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/orm-tests.esm.js",
+      "limit": "10 KB"
+    }
+  ],
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "^4.10.2",
+    "@types/lodash": "^4.14.168",
+    "husky": "^6.0.0",
+    "size-limit": "^4.10.2",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.2.0",
+    "typescript": "^4.3.0-beta"
+  },
+  "dependencies": {
+    "big-integer": "^1.6.48",
+    "immer": "^9.0.1",
+    "lodash": "^4.17.21"
+  }
+}
