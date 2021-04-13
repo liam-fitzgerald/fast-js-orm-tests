@@ -1,0 +1,79 @@
+{
+  "should have key": {
+    "Current: small:": 0.6436039999998684,
+    "Current: med:": 0.29230299999994713,
+    "Current: large:": 1.0613780000001043,
+    "POJO: small:": 0.19645399999990332,
+    "POJO: med:": 0.1759439999998449,
+    "POJO: large:": 0.12431100000003426,
+    "ESMap: small:": 0.1777199999999084,
+    "ESMap: med:": 1.272611999999981,
+    "ESMap: large:": 0.13762399999995978
+  },
+  "should delete key": {
+    "Current: small:": 0.43926299999998264,
+    "Current: med:": 0.3202879999998913,
+    "Current: large:": 0.228490999999849,
+    "POJO: small:": 0.35034799999993993,
+    "POJO: med:": 0.1233910000000833,
+    "POJO: large:": 0.17412100000001374,
+    "ESMap: small:": 0.21631299999990006,
+    "ESMap: med:": 0.23705999999992855,
+    "ESMap: large:": 0.2927709999999024
+  },
+  "should get key": {
+    "Current: small:": 0.251158999999916,
+    "Current: med:": 0.2811580000000049,
+    "Current: large:": 0.3342250000000604,
+    "POJO: small:": 0.22106099999996331,
+    "POJO: med:": 0.14780799999994088,
+    "POJO: large:": 0.12285400000018853,
+    "ESMap: small:": 0.3115290000000641,
+    "ESMap: med:": 0.1755639999998948,
+    "ESMap: large:": 0.10322800000017196
+  },
+  "should be iterable": {
+    "Current: small:": 0.22996699999998782,
+    "Current: med:": 0.05170999999995729,
+    "Current: large:": 0.4739160000001448,
+    "POJO: small:": 0.07565900000008696,
+    "POJO: med:": 0.24892100000010942,
+    "POJO: large:": 4.450525999999854,
+    "ESMap: small:": 0.10238000000003922,
+    "ESMap: med:": 1.1496570000001611,
+    "ESMap: large:": 10.21484700000019
+  },
+  "should be iterable, maybe memoized": {
+    "Current: small:": 0.0566839999999047,
+    "Current: med:": 0.07319999999981519,
+    "Current: large:": 1.6023199999999633,
+    "POJO: small:": 0.04235900000003312,
+    "POJO: med:": 0.24562599999990198,
+    "POJO: large:": 2.9316339999998036,
+    "ESMap: small:": 0.17217599999980848,
+    "ESMap: med:": 4.448794999999791,
+    "ESMap: large:": 28.302864
+  },
+  "should have keys": {
+    "Current: small:": 0.07916799999998148,
+    "Current: med:": 0.057581000000027416,
+    "Current: large:": 0.42654499999980544,
+    "POJO: small:": 0.090101999999888,
+    "POJO: med:": 0.24029799999993884,
+    "POJO: large:": 4.362118999999893,
+    "ESMap: small:": 0.4104339999998956,
+    "ESMap: med:": 0.6409710000000359,
+    "ESMap: large:": 13.218621999999868
+  },
+  "should insert": {
+    "Current: small:": 0.18913999999995212,
+    "Current: med:": 1.216468999999961,
+    "Current: large:": 17.038313000000016,
+    "POJO: small:": 0.03182199999992008,
+    "POJO: med:": 0.08996799999999894,
+    "POJO: large:": 0.8208749999998872,
+    "ESMap: small:": 0.043175000000246655,
+    "ESMap: med:": 0.05767500000001746,
+    "ESMap: large:": 0.7586389999999028
+  }
+}

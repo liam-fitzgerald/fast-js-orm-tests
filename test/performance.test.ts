@@ -5,6 +5,7 @@ import CurrentBigIntOrderedMap from '../src/current';
 import PojoOrderedMap from '../src/pojo';
 import ESOrderedMap from '../src/nativemap';
 import { MutableOrderedMap } from '../src/interface';
+import { writeFileSync } from 'fs';
 
 interface Value {
   numb: number;
@@ -130,5 +131,5 @@ testMapImplementation('POJO', () => new PojoOrderedMap());
 testMapImplementation('ESMap', () => new ESOrderedMap());
 
 afterAll(() => {
-  console.log(results);
+  writeFileSync('../results.json', JSON.stringify(results, null, 2));
 });
